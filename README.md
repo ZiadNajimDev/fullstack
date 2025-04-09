@@ -1,4 +1,3 @@
-Voici une version formatée de ton texte en fichier `README.md` :
 
 ```markdown
 # 📘 Documentation du Projet Fullstack avec CI/CD
@@ -20,7 +19,7 @@ Il implémente un système **CRUD** complet pour la gestion d’utilisateurs, av
 ## 2. 🏗️ Architecture Technique
 
 ### 2.1 🗂️ Structure des Fichiers
-```
+```markdown
 .
 ├── backend/                # API Node.js/Express
 │   ├── Dockerfile          # Configuration Docker
@@ -177,17 +176,3 @@ docker-compose -f docker-compose.prod.yml push
 |--------------|----------------|
 | DB_HOST      | mysql-prod     |
 | NODE_ENV     | production     |
-
----
-
-## 9. 🚧 Améliorations Futures
-1. Monitoring avec **Prometheus/Grafana**  
-2. Tests E2E avec **Cypress**  
-3. Scaling horizontal avec **Kubernetes**
-
----
-
-📚 **Étudiant** : Ziad Najim  
-👨‍🏫 **Encadré par** : *[Nom du Professeur]*  
-📅 **Année** : 2024/2025
-```
