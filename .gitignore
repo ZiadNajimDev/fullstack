@@ -1,0 +1,16 @@
+.qodo
+# Node
+node_modules/
+npm-debug.log
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+
+# Build
+dist/
+build/
