@@ -1,5 +1,3 @@
-
-```markdown
 # 📘 Documentation du Projet Fullstack avec CI/CD
 
 ---
@@ -12,27 +10,28 @@ Ce projet est une application **fullstack** développée avec :
 - **Infrastructure** : Docker + Docker Compose  
 - **CI/CD** : GitHub Actions
 
-Il implémente un système **CRUD** complet pour la gestion d’utilisateurs, avec des **tests automatisés** et un **déploiement continu**.
+Il implémente un système **CRUD** complet pour la gestion d'utilisateurs, avec des **tests automatisés** et un **déploiement continu**.
 
 ---
 
 ## 2. 🏗️ Architecture Technique
 
-### 2.1 🗂️ Structure des Fichiers
-```markdown
-.
-├── backend/                # API Node.js/Express
-│   ├── Dockerfile          # Configuration Docker
-│   ├── app.js              # Point d'entrée
-│   ├── routes/             # Contrôleurs API
-│   └── test/               # Tests unitaires et d'intégration
-├── frontend/               # Application React
-│   ├── Dockerfile          # Build de production
-│   └── src/                # Code source
-├── docker-compose.yml      # Environnement de développement
-├── docker-compose.prod.yml # Configuration de production
-└── .github/workflows/      # Pipeline CI/CD
-```
+### 2.1 Structure des Fichiers
+
+**Backend** (`/backend`)  
+• `Dockerfile` - Configuration Docker  
+• `app.js` - Point d'entrée principal  
+• `routes/` - Contrôleurs API  
+• `test/` - Tests unitaires et d'intégration  
+
+**Frontend** (`/frontend`)  
+• `Dockerfile` - Build de production  
+• `src/` - Code source React  
+
+**Fichiers racine**  
+• `docker-compose.yml` - Environnement de développement  
+• `docker-compose.prod.yml` - Configuration production  
+• `.github/workflows/` - Pipeline CI/CD  
 
 ### 2.2 🧬 Schéma d'Architecture
 ```mermaid
