@@ -1,20 +1,14 @@
-```markdown
 # 📚 Documentation API - Fullstack App
 
 ## 🔗 URL de Base
 `http://localhost:5000/api`
 
----
-
 ## 🚀 Endpoints Disponibles
 
 ### 1. Obtenir Tous les Utilisateurs
-`GET /users`
-
-**Description** :  
-Récupère la liste de tous les utilisateurs enregistrés
-
-**Réponse (200 OK)** :
+- **Méthode**: `GET /users`
+- **Description**: Récupère la liste de tous les utilisateurs enregistrés
+- **Réponse (200 OK)**:
 ```json
 [
   {
@@ -26,20 +20,16 @@ Récupère la liste de tous les utilisateurs enregistrés
 ]
 ```
 
----
-
 ### 2. Créer un Utilisateur
-`POST /users`
-
-**Corps de la Requête** :
+- **Méthode**: `POST /users`
+- **Corps de la Requête**:
 ```json
 {
   "name": "Nouvel Utilisateur",
   "email": "nouveau@exemple.com"
 }
 ```
-
-**Réponse (201 Créé)** :
+- **Réponse (201 Créé)**:
 ```json
 {
   "id": 2,
@@ -48,41 +38,30 @@ Récupère la liste de tous les utilisateurs enregistrés
 }
 ```
 
----
-
 ### 3. Mettre à Jour un Utilisateur
-`PUT /users/:id`
-
-**Paramètres** :
-- `id` (requis) - ID de l'utilisateur à modifier
-
-**Corps de la Requête** :
+- **Méthode**: `PUT /users/:id`
+- **Paramètres**:
+  - `id` (requis) - ID de l'utilisateur à modifier
+- **Corps de la Requête**:
 ```json
 {
   "name": "Nom Modifié",
   "email": "modifie@exemple.com"
 }
 ```
-
-**Réponse (200 OK)** :
+- **Réponse (200 OK)**:
 ```json
 {
   "message": "Utilisateur mis à jour avec succès"
 }
 ```
 
----
-
 ### 4. Supprimer un Utilisateur
-`DELETE /users/:id`
-
-**Paramètres** :
-- `id` (requis) - ID de l'utilisateur à supprimer
-
-**Réponse (204 Pas de Contenu)** :
-*(Pas de corps de réponse)*
-
----
+- **Méthode**: `DELETE /users/:id`
+- **Paramètres**:
+  - `id` (requis) - ID de l'utilisateur à supprimer
+- **Réponse (204 Pas de Contenu)**:
+  *(Pas de corps de réponse)*
 
 ## 🛠️ Comment Tester
 
@@ -97,8 +76,6 @@ curl -X POST -H "Content-Type: application/json" \
 http://localhost:5000/api/users
 ```
 
----
-
 ## 🗄️ Structure de la Base de Données
 ```sql
 CREATE TABLE users (
@@ -109,25 +86,11 @@ CREATE TABLE users (
 );
 ```
 
----
-
 ## ⚠️ Réponses d'Erreur
+
 | Code | Message                  | Description                     |
 |------|--------------------------|---------------------------------|
-| 400  | "Email déjà existant"    | Email dupliqué                 |
-| 404  | "Utilisateur non trouvé" | ID utilisateur invalide        |
-| 500  | "Erreur serveur"        | Problème côté serveur          |
+| 400  | "Email déjà existant"    | Email dupliqué                  |
+| 404  | "Utilisateur non trouvé" | ID utilisateur invalide         |
+| 500  | "Erreur serveur"         | Problème côté serveur           |
 
-> **Note** : Toutes les dates suivent le format ISO 8601 (AAAA-MM-JJTHH:MM:SSZ)
-```
-
-Pour l'utiliser :
-1. Copiez tout ce bloc de code
-2. Collez-le dans votre fichier `README.md`
-3. Personnalisez les exemples si nécessaire
-4. Sauvegardez et poussez sur GitHub :
-```bash
-git add README.md
-git commit -m "Ajout documentation API"
-git push
-```
